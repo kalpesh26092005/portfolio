@@ -1524,7 +1524,7 @@
                 <div class="image-ring-2"></div>
                 <div class="image-ring"></div>
                 <img 
-                    src="https://i.imgur.com/YOUR_IMAGE.jpg" 
+                    src="profile.jpg" 
                     alt="Kalpesh Dukhande" 
                     class="profile-img"
                     id="profileImg"
@@ -1532,7 +1532,7 @@
                 >
                 <!-- Avatar Fallback -->
                 <div id="avatarFallback" style="
-                    display: flex;
+                    display: none;
                     width: 100%;
                     height: 100%;
                     border-radius: 50%;
@@ -2221,43 +2221,7 @@
     const heroStats = document.querySelector('.hero-stats');
     if (heroStats) statsObserver.observe(heroStats);
 
-    // ===== PROFILE IMAGE SETUP =====
-    // Since we can't use a direct image URL, show the fallback initials avatar by default
-    const profileImg = document.getElementById('profileImg');
-    const avatarFallback = document.getElementById('avatarFallback');
-    
-    // Show fallback immediately since we don't have a direct image URL
-    profileImg.style.display = 'none';
-    avatarFallback.style.display = 'flex';
 </script>
 
 </body>
 </html>
-```
-
-## 🚀 Features of This Portfolio
-
-### Design Highlights:
-- **Dark theme** with purple/cyan gradient accents — modern & professional
-- **Animated rotating ring** around the profile photo area
-- **Floating badges** showing skills near the avatar
-- **Particle background** effect for depth
-- **Grid overlay** with radial gradient masking
-- **Glassmorphism** navbar with blur effect
-
-### Functional Features:
-- ✅ **Sticky responsive navbar** with hamburger menu for mobile
-- ✅ **Smooth scroll** to all sections
-- ✅ **Scroll reveal animations** on all cards/sections
-- ✅ **Counter animation** on hero stats
-- ✅ **Working contact form** with loading state & success message
-- ✅ **Scroll-to-top button** 
-- ✅ **Active nav link highlighting** based on scroll position
-- ✅ **Hover effects** on all interactive elements
-- ✅ **Fully responsive** for mobile/tablet/desktop
-
-### To Add Your Photo:
-Replace the image src with a hosted URL (e.g., upload to Imgur, Cloudinary, or GitHub):
-```html
-<img src="YOUR_HOSTED_IMAGE_URL" ...>
-```
